@@ -12,25 +12,24 @@
       <li>3</li>
       <li>4</li>
       <li> 5</li>
-      <ul id ="sub">
-        <li>3-0</li>
-        <li class="item">3-1</li>
-        <li>3-2</li>
-        <li class="item">3-3</li>
-    </ul>
+    
+        <ul id ="sub">
+          <li>3-0</li>
+          <li class="item">3-1</li>
+          <li>3-2</li>
+          <li class="item">3-3</li>
+         </ul>
+      </ul>
+
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script>
       //  $(document).ready(function(){
         $(function(){
-         // $('p').css('color','red').hide('slow');
-         // $("#sub > li:eq(2)").css('color','blue').hide('fast');
-        //  $(".item").css('color','green');
-	 // $("#main > li:gt(1)").css('color','pink');
-	//  $("#sub > li:lt(2)").css('color','pink');
-	    $("#main > li:odd").css('color','pink').hide('slow');
-	    $("#sub > li:contains('1')").css('color', 'red');
-        });
+	//$("#sub").parent().css('color','red').hide('slow');
+        $("#sub > li:eq(2)").siblings().css('color','red');    
+	});
+
         
     </script>
   </body>
