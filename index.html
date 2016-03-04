@@ -3,9 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>jQueryの練習</title>
+    <style>
+    .myStyle{
+	    border:5px solid green;
+	    font-size:48px;
+	    }
+    </style>
  </head>
  <body>
-   <p>Playing jQuery !</p>
+   <p id="main">Playing jQuery !</p>
    <p><a href="http://google.com">Goodgle</a></p>
    <p><a href="http://yahoo.co.jp">yahoo</a></p>
    <p><a href="http://ami.com">Ami</a></p>
@@ -17,6 +23,8 @@
     <script>
         $(function(){
 		$('a[href$="jp"]').css('background','pink');
+		$("#main").css('color','red').css('background','black');
+		$('p').addClass('myStyle');
 	});
 
         
