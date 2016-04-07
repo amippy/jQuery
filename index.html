@@ -11,24 +11,23 @@
     </style>
  </head>
  <body>
-   <p id="main">Playing jQuery !</p>
-   <p><a href="http://google.com">Goodgle</a></p>
-   <p><a href="http://yahoo.co.jp">yahoo</a></p>
-   <p><a href="http://ami.com">Ami</a></p>
+   <div id="list">
+     <img src="img/0.jpg" height="500" width="400" class="big"/>
+     <img src="img/1.jpg" height="500" width="400" class="small"/>
+     <img src="img/3.jpg" height="500" width="400" class="big"/>
+     <img src="img/4.jpg" height="500" width="400" class="small"/>
+   </div>
 
-
-
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script>
-        $(function(){
-		$('a[href$="jp"]').css('background','pink');
-		$("#main").css('color','red').css('background','black');
-		$('p').addClass('myStyle');
-	});
 
-        
+    $(function(){
+      $('#list img.small').animate({width:140, height:200},5000);
+      $('#list img.big').animate({width:300, height:360},5000);
+    });
+
+
     </script>
   </body>
 </html>
-
