@@ -35,12 +35,18 @@
       setInterval(toggle_slide,7000);
     });
 
+    $('#btn').click(function(){
+      $('.fadeIn').fadeIn(3000).fadeOut(7000);
+      $('#workout').css('color','red').css('font-size','100px;');
+      $('#do').css('color','blue').css('font-size','80px;');
+
+        });
+
 
 
 
   });
   </script>
-
 </head>
 <body>
   <div class="boxA">
@@ -66,31 +72,35 @@
     </div>
 
     <div class="box3">
-      <ul id="slideshow">
-        <li class="current"><img src="img/protein.jpg" class="topimage"></li>
-        <li><img src="img/1.jpg" class="topimage"></li>
-        <li><img src="img/2.jpg" class="topimage"></li>
-      </ul>
+        <ul id="slideshow">
+          <li class="current"><img src="img/protein.jpg" class="topimage"></li>
+          <li><img src="img/1.jpg" class="topimage"></li>
+          <li><img src="img/2.jpg" class="topimage"></li>
+        </ul>
+        <button type="button" id="btn">Click!</button>
+        <h1 class="fadeIn" id="workout">Let's WorkOut!!</h1>
+        <p class="fadeIn" id="do">The Only Bad WorkOut Is The One That You Didnt Do!</p>
+      </div>
     </div>
 
     <div class="box6">
       <div class="box6-1">
         <div class="protein">
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <i class="fa fa-cutlery" aria-hidden="true" ></i>
           <h1 class="hide">ホエイプロテイン</h1>
           <p class="hide">「プロテインの王様」と呼ばれる。<br>筋肉を増やすのに一番効果的！</p>
         </div>
       </div>
       <div class="box6-2">
         <div class="protein">
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <i class="fa fa-cutlery" aria-hidden="true" ></i>
           <h1 class="hide">カゼインプロテイン</h1>
           <p class="hide">吸収がゆっくり。長時間持続的に栄養を与えてくれる。<br>寝る前や間食での栄養供給にもってこい</p>
         </div>
       </div>
       <div class="box6-3">
         <div class="protein">
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <i class="fa fa-cutlery" aria-hidden="true" ></i>
           <h1 class="hide">ソイプロテイン</h1>
           <p class="hide">ダイエットをする際に最も効果的なプロテイン！<br>女性ホルモンの一種"エストロゲン"と同じ作用！</p>
         </div>
@@ -116,7 +126,8 @@
             <li><a href="#" class="facebook">
               <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
             </li>
-            <li><a href="#" class="qiita"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a>
+            <li><a href="#" class="google">
+              <i class="fa fa-google-plus" aria-hidden="true"></i></a>
             </li>
           </ul>
         </div>
