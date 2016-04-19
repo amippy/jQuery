@@ -25,10 +25,30 @@ li{
 }
 
 
-.topimg{
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
+#slideshow{
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#slideshow > li{
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s;
+  -webkit-transition : opacity 1s;
+  -moz-transition : opacity 1s;
+  -o-transition : opacity 1s;
+  -ms-transition:opacity 1s;
+}
+
+#slideshow > li.current{
+  opacity: 1;
+}
+
+.topimage{
+  width: 500px;
+  height: 200px;
+  margin-bottom: 100px;
+
 }
 
 .protein h1{
@@ -152,7 +172,7 @@ li{
 }
 
 .box6{
-  padding-top: 20px;
+  padding-top: 200px;
 }
 
 .box6-1, .box6-2, .box6-3{
@@ -170,6 +190,10 @@ li{
 /* 599px以下*/
 
 @media (max-width:599px){
+
+  #header{
+    width: 200px;
+  }
 
   #menubtn i{
     color: #888888;
@@ -208,8 +232,10 @@ li{
   }
 
   .topimage{
-    width: 350px;
-    height: auto;
+    width: 300px;
+    height: 230px;
+    margin-bottom: 100px;
+
   }
 
 
@@ -253,6 +279,7 @@ li{
   .menu li{
     float: left;
     width: auto;
+    padding-right: 15px;
   }
 
 
@@ -324,7 +351,7 @@ li{
 /*1190以上*/
 @media (min-width:1190px){
 
-  .box3, .box4, .boxA-inner, .box5-inner, .box6{
+  .box3, .box4, .boxA-inner, .box5-inner, .box6, #slideshow,{
     width:1140px;
     margin-left: auto;
     margin-right: auto;
@@ -334,6 +361,8 @@ li{
     margin-bottom: 20px;
     border-bottom: solid 1px #dddddd;
   }
+
+
 
 
 
